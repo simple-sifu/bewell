@@ -1,0 +1,137 @@
+{
+	"variables": [],
+	"info": {
+		"name": "bwell faciliites api",
+		"_postman_id": "c6f50a48-d749-b0e7-e9e3-37ace14616b2",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "facilities list",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8000/api/v1/facilities?description=Diagnostic%20and%20Treatment%20Center",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"facilities"
+					],
+					"query": [
+						{
+							"key": "description",
+							"value": "Diagnostic%20and%20Treatment%20Center",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "facilities post",
+			"request": {
+				"url": "http://localhost:8000/api/v1/facilities/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"facility\": 2,\n    \"name\": \"Whitney M Young Jr Health Center Inc\",\n    \"openDate\": \"09/27/1979\",\n    \"desc\": [\n        {\n            \"shortDescription\": \"DTC\",\n            \"description\": \"Diagnostic and Treatment Center\"\n        }\n    ],\n    \"loc\": [\n        {\n            \"address1\": \"920 Lark Drive\",\n            \"address2\": \"\",\n            \"city\": \"Albany\",\n            \"state\": \"New York\",\n            \"zipCode\": \"12207\",\n            \"phoneNumber\": \"5184654771\",\n            \"faxNumber\": \"\",\n            \"website\": \"\",\n            \"countyCode\": \"1\",\n            \"county\": \"Albany\",\n            \"latitude\": \"42.662682\",\n            \"longitude\": \"-73.748375\",\n            \"location\": \"(42.662682, -73.748375)\"\n        }\n    ]\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "facilities delete",
+			"request": {
+				"url": "http://localhost:8000/api/v1/facilities/4",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "facilities put",
+			"request": {
+				"url": "http://localhost:8000/api/v1/facilities/11/",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"facility\": 11,\n    \"name\": \"Whitney M Young Jr Health Center Inc xxx\",\n    \"openDate\": \"09/27/1979\",\n    \"desc\": [\n        {\n            \"shortDescription\": \"DTC\",\n            \"description\": \"Diagnostic and Treatment Center\"\n        }\n    ],\n    \"loc\": [\n        {\n            \"address1\": \"920 Lark Drive\",\n            \"address2\": \"\",\n            \"city\": \"Albany\",\n            \"state\": \"New York\",\n            \"zipCode\": \"12207\",\n            \"phoneNumber\": \"5184654771\",\n            \"faxNumber\": \"\",\n            \"website\": \"\",\n            \"countyCode\": \"1\",\n            \"county\": \"Albany\",\n            \"latitude\": \"42.662682\",\n            \"longitude\": \"-73.748375\",\n            \"location\": \"(42.662682, -73.748375)\"\n        }\n    ]\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "facilities detail",
+			"request": {
+				"url": "http://localhost:8000/api/v1/facilities/11",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "facilities list w/query params",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8000/api/v1/facilities?description=Diagnostic%20and%20Treatment%20Center",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"facilities"
+					],
+					"query": [
+						{
+							"key": "description",
+							"value": "Diagnostic%20and%20Treatment%20Center",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
