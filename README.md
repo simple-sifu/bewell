@@ -45,7 +45,7 @@ Load a public dataset from into a SQLite database and build a RESTful API interf
   > 0. Remove all files like sqlite, migrations, etc.
   > 1. python manage.py makemigrations <app>
   > 2. python manage.py migrate
-  > 3. python manage.py **uploadcsv** --filename Health_Facility_General_Information.csv 
+  > 3. python manage.py uploadcsv --filename Health_Facility_General_Information.csv 
 
   > 1. I have included postman collections in the postman folder under the base dir
   > 2. API endpoints can also be tested using Swagger document, make sure django application is running.
